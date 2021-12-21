@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)file:///D:/VSCode/eckarts_open_class-master/%E7%8E%B0%E4%BB%A3%E5%9C%B0%E5%9B%BE%E5%AD%A6/index.html -->
+<html lang="en" class="hairlines" style="font-size: 53.3333px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代地图学</title>
+    <link rel="stylesheet" href="./现代地图学-第一产业_files/index.css">
+  </head>
+  <body style="font-size: 24px;">
+    <!-- 头部的盒子 -->
+    <header>
+      <h1>全国主要城市第一产业产值研究</h1>
+      <div class="showTime">当前时间：2021年12月21-23时43分34秒</div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //開始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+      &amp;
+    </header>
+
+    <!-- 页面主体部分 -->
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar">
+          <h2>柱形图-第一产业产值</h2>
+          <div class="chart" _echarts_instance_="ec_1640101303280" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>
+            折线图-产值变化 <a href="javacript:;">2019</a><a href="javascript:;">2018</a>
+          </h2>
+          <div class="chart" _echarts_instance_="ec_1640101303282" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>饼形图-产值比重</h2>
+          <div class="chart" _echarts_instance_="ec_1640101303284" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+  
+        <!-- 地图模块 -->
+        <div class="map">
+          <div class="map1"></div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+          <div class="chart" _echarts_instance_="ec_1640101303286" style="-webkit-tap-highlight-color: transparent; user-select: none;"><div style="position: relative; overflow: hidden; width: 562px; height: 540px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1124" height="1080" style="position: absolute; left: 0px; top: 0px; width: 562px; height: 540px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas data-zr-dom-id="zr_1" width="1124" height="1080" style="position: absolute; left: 0px; top: 0px; width: 562px; height: 540px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas data-zr-dom-id="zr_2" width="1124" height="1080" style="position: absolute; left: 0px; top: 0px; width: 562px; height: 540px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 317px; top: 236px; pointer-events: none;">拉萨&gt;哈尔滨<br>100</div></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel bar2">
+          <h2>柱形图-城市产值</h2>
+          <div class="chart" _echarts_instance_="ec_1640101303281" style="-webkit-tap-highlight-color: transparent; user-select: none;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line2">
+          <h2>折线图-第一产业变化量</h2>
+          <div class="chart" _echarts_instance_="ec_1640101303283" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie2">
+          <h2>饼形图-地区分布</h2>
+          <div class="chart" _echarts_instance_="ec_1640101303285" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 315px; height: 160px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="630" height="320" style="position: absolute; left: 0px; top: 0px; width: 315px; height: 160px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./现代地图学-第一产业_files/flexible.js.下载"></script>
+    <script src="./现代地图学-第一产业_files/echarts.min.js.下载"></script>
+    <!-- 先引入jquery -->
+    <script src="./现代地图学-第一产业_files/jquery.js.下载"></script>
+    <!-- 必须先引入china.js 这个文件 因为中国地图需要 -->
+    <script src="./现代地图学-第一产业_files/china.js.下载"></script>
+    <script src="./现代地图学-第一产业_files/index.js.下载"></script>
+  
+
+</body></html>
