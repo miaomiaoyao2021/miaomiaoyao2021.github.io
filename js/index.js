@@ -768,31 +768,55 @@
     长治: [112.8625, 36.4746],
     阳泉: [113.4778, 38.0951],
     青岛: [120.4651, 36.3373],
-    韶关: [113.7964, 24.7028]
+    韶关: [113.7964, 24.7028],
+    昆明: [102.73 , 25.04],
+    桂林: [110.299 ,25.2742],
+    厦门:[ 118.1,24.46],
+    贵阳:[106.76075,26.6307]
+
   };
 
   var XAData = [
-    [{ name: "西安" }, { name: "拉萨", value: 100 }],
-    [{ name: "西安" }, { name: "上海", value: 100 }],
-    [{ name: "西安" }, { name: "广州", value: 100 }],
-    [{ name: "西安" }, { name: "西宁", value: 100 }],
-    [{ name: "西安" }, { name: "银川", value: 100 }]
+    [{ name: "临汾" }, { name: "北京", value: 100 }],
+    [{ name: "太原" }, { name: "北京", value: 100 }],
+    [{ name: "上海" }, { name: "北京", value: 100 }],
+    [{ name: "青岛" }, { name: "北京", value: 100 }],
+    [{ name: "西安" }, { name: "北京", value: 100 }],
+    [{ name: "乌鲁木齐" }, { name: "北京", value: 100 }],
+    [{ name: "石家庄" }, { name: "北京", value: 100 }],
+    [{ name: "海口" }, { name: "北京", value: 100 }],
+    [{ name: "成都" }, { name: "北京", value: 100 }],
+    [{ name: "呼和浩特" }, { name: "北京", value: 100 }],
+    [{ name: "贵阳" }, { name: "北京", value: 100 }],
+    [{ name: "重庆" }, { name: "北京", value: 100 }],
+    [{ name: "武汉" }, { name: "北京", value: 100 }],
+
   ];
 
   var XNData = [
+    [{ name: "兰州" }, { name: "北京", value: 100 }],
+    [{ name: "温州" }, { name: "北京", value: 100 }],
+    [{ name: "南昌" }, { name: "北京", value: 100 }],
+    [{ name: "长沙" }, { name: "北京", value: 100 }],
     [{ name: "西宁" }, { name: "北京", value: 100 }],
-    [{ name: "西宁" }, { name: "上海", value: 100 }],
-    [{ name: "西宁" }, { name: "广州", value: 100 }],
-    [{ name: "西宁" }, { name: "西安", value: 100 }],
-    [{ name: "西宁" }, { name: "银川", value: 100 }]
+    [{ name: "重庆" }, { name: "北京", value: 100 }],
+    [{ name: "哈尔滨" }, { name: "北京", value: 100 }],
+    [{ name: "厦门" }, { name: "北京", value: 100 }],
+    [{ name: "银川" }, { name: "北京", value: 100 }],
+    [{ name: "珠海" }, { name: "北京", value: 100 }]
   ];
 
   var YCData = [
-    [{ name: "拉萨" }, { name: "潍坊", value: 100 }],
-    [{ name: "拉萨" }, { name: "哈尔滨", value: 100 }],
-    [{ name: "银川" }, { name: "上海", value: 100 }],
-    [{ name: "银川" }, { name: "西安", value: 100 }],
-    [{ name: "银川" }, { name: "西宁", value: 100 }]
+    [{ name: "临沂" }, { name: "北京", value: 100 }],
+    [{ name: "拉萨" }, { name: "北京", value: 100 }],
+    [{ name: "湘潭" }, { name: "北京", value: 100 }],
+    [{ name: "长春" }, { name: "北京", value: 100 }],
+    [{ name: "郑州" }, { name: "北京", value: 100 }],
+    [{ name: "昆明" }, { name: "北京", value: 100 }],
+    [{ name: "合肥" }, { name: "北京", value: 100 }],
+    [{ name: "沈阳" }, { name: "北京", value: 100 }],
+    [{ name: "福州" }, { name: "北京", value: 100 }],
+    [{ name: "桂林" }, { name: "北京", value: 100 }],
   ];
 
   var planePath =
@@ -820,9 +844,9 @@
   var color = ["#a6c84c", "#ffa022", "#46bee9"]; //航线的颜色
   var series = [];
   [
-    ["西安", XAData],
-    ["西宁", XNData],
-    ["银川", YCData]
+    ["1", XAData],
+    ["2", XNData],
+    ["3", YCData]
   ].forEach(function(item, i) {
     series.push(
       {
@@ -922,7 +946,17 @@
         }
       }
     },
-
+    title: {
+      orient: "vertical",
+      top: "bottom",
+      left: "center",
+      text: ["四方学子齐聚雁栖湖"],
+      textStyle: {
+        color: "#fff",
+        fontSize:30,
+      },
+      selectedMode: "multiple"
+    },
     geo: {
       map: "china",
       label: {
